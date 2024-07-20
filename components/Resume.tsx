@@ -3,7 +3,7 @@ const Resume = () => {
     <div className="mt-12 ml-6">
       <a
         className="inline-flex items-baseline leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold group/link text-base"
-        href="/"
+        href="/resume.pdf"
         target="_blank"
         rel="noreferrer noopener"
       >
