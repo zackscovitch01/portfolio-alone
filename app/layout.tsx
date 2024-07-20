@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Resume from "@/components/Resume";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +20,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className="lg:absolute bg-[#101D3F] lg:grid lg:grid-cols-2 max-w-screen-xl lg:justify-center lg:ml-[2rem] lg:gap-4 px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div className="max-w-xl lg:h-screen p-6 lg:flex lg:flex-col lg:justify-between lg:max-h-[650px] mt-4 lg:mt-10 lg:sticky lg:top-10">
+          <Header />
+          <Footer />
+        </div>
+        <div>
+          <About />
+          <Experience />
+          <Resume />
+        </div>
+      </body>
     </html>
   );
 }
