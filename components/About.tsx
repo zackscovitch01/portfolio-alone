@@ -10,9 +10,10 @@ const About = () => {
         </h2>
       </div>
       <p className="text-slate-400 mb-4">
-        After graduating from Laval University in 2018 with a degree in
-        Bioinformatics, I found myself at a crossroads. Although I gained
-        valuable skills in <span className="text-teal-300">Python</span>,{" "}
+        After graduating from Laval University in 2018 with a degree in{" "}
+        <span className="font-medium text-slate-200">Bioinformatics</span>, I
+        found myself at a crossroads. Although I gained valuable skills in{" "}
+        <span className="text-teal-300">Python</span>,{" "}
         <span className="text-teal-300">SQL</span>, and big data manipulation, I
         realized my true passion lay in building websites and crafting intuitive
         user interfaces. Determined to follow this passion, I decided to{" "}

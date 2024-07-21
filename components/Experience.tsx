@@ -2,7 +2,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
-    startYear: "Dec 2022",
+    startYear: "2022",
     endYear: "Present",
     jobTitle: "Freelance Web Developer",
     jobDesc:
@@ -10,14 +10,22 @@ const experiences = [
     link: "https://www.fiverr.com/",
     companyName: "Upwork & Fiverr",
 
-    tech: ["TypeScript", "Tailwind CSS", "Next js", "Clerk", "Firebase"],
+    tech: [
+      "TypeScript",
+      "Tailwind CSS",
+      "Next js",
+      "Clerk",
+      "Firebase",
+      "React",
+      "Vercel",
+    ],
   },
   {
     startYear: "2019",
     endYear: "Nov 2022",
     jobTitle: "Junior Web Developer",
     jobDesc:
-      "Developed, tested and maintained clients websites and web applications. Worked closely with clients to establish problem specifications and system designs. Ensured that the website is optimized for various devices and presented a consistent look and feel across all platforms. Collaborated with a team of developers, desigbers and project managers to deliver high quality projects on time.",
+      "Developed, tested and maintained clients websites and web applications. Worked closely with clients to establish problem specifications and system designs. Ensured that the website is optimized for various devices and presented a consistent look and feel across all platforms. Collaborated with a team of developers, designers and project managers to deliver high quality projects on time.",
     link: "#",
     companyName: "2AB Web Design",
 

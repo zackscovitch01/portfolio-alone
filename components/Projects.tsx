@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Comfy Store",
-    desc: "Furniture e-commerce website for a client on Fiverr.",
+    desc: "Furniture e-commerce website for a client on Fiverr. It includes a cart, orders and a checkout page.",
     image: ComfyStore,
     link: "https://comfy-store-tawny.vercel.app/",
     techs: [

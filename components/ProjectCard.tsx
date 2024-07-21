@@ -17,6 +17,8 @@ const ProjectCard = ({ title, desc, image, link, techs }: ProjectCardProps) => {
           <a
             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
             href={link}
+            target="_blank"
+            rel="noreferrer noopener"
           >
             <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
             <span>{title}</span>
@@ -39,9 +41,9 @@ const ProjectCard = ({ title, desc, image, link, techs }: ProjectCardProps) => {
         </h3>
         <p className="mt-2 text-sm leading-normal text-slate-400">{desc}</p>
         <ul className="flex flex-wrap mt-2">
-          {techs.map((singleTech) => {
+          {techs.map((singleTech, index) => {
             return (
-              <li className="mr-1.5 mt-2">
+              <li key={index} className="mr-1.5 mt-2">
                 <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                   {singleTech}
                 </div>

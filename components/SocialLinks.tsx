@@ -8,6 +8,8 @@ const SocialLinks = () => {
         <a
           className="block hover:text-slate-200"
           href="https://github.com/zackscovitch01"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <FaGithub className="h-6 w-6" />
           <span className="sr-only">Github</span>
@@ -17,6 +19,8 @@ const SocialLinks = () => {
         <a
           className="block hover:text-slate-200"
           href="https://www.linkedin.com/in/moubarackbagoudou/"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <FaLinkedin className="h-6 w-6" />
           <span className="sr-only">LinkedIn</span>
@@ -26,6 +30,8 @@ const SocialLinks = () => {
         <a
           className="block hover:text-slate-200"
           href="https://www.instagram.com/zackscovitch/"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <FaInstagram className="h-6 w-6" />
           <span className="sr-only">Instagram</span>
@@ -35,6 +41,8 @@ const SocialLinks = () => {
         <a
           className="block hover:text-slate-200"
           href="https://x.com/Zackscovitch01"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <FaXTwitter className="h-6 w-6" />
           <span className="sr-only">Twitter</span>
@@ -44,6 +52,8 @@ const SocialLinks = () => {
         <a
           className="block hover:text-slate-200"
           href="https://www.facebook.com/moubarack.z.bagoudou/"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <FaFacebook className="h-6 w-6" />
           <span className="sr-only">Facebook</span>
