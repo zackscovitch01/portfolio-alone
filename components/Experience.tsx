@@ -55,9 +55,10 @@ const Experience = () => {
           Experience
         </h2>
       </div>
-      {experiences.map((experience) => {
+      {experiences.map((experience, index) => {
         return (
           <ExperienceCard
+            key={index}
             startYear={experience.startYear}
             endYear={experience.endYear}
             jobTitle={experience.jobTitle}

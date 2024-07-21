@@ -48,9 +48,10 @@ const Projects = () => {
           Projects
         </h2>
       </div>
-      {projects.map((project) => {
+      {projects.map((project, index) => {
         return (
           <ProjectCard
+            key={index}
             title={project.title}
             desc={project.desc}
             image={project.image}
