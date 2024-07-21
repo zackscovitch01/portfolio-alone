@@ -1,23 +1,11 @@
-type TechTypes =
-  | "Javascript"
-  | "Typescript"
-  | "HTML & CSS"
-  | "React"
-  | "Next.js"
-  | "Wordpress"
-  | "Tailwind CSS"
-  | "Node.js"
-  | "Framer Motion"
-  | "Python"
-  | "Tensor Flow";
-
 interface ExperienceCardProps {
   startYear: string;
   endYear: string;
   jobTitle: string;
   jobDesc: string;
+  link: string;
   companyName: string;
-  tech: TechTypes[];
+  tech: string[];
 }
 
 const ExperienceCard = ({
@@ -25,6 +13,7 @@ const ExperienceCard = ({
   endYear,
   jobTitle,
   jobDesc,
+  link,
   companyName,
   tech,
 }: ExperienceCardProps) => {
@@ -39,7 +28,7 @@ const ExperienceCard = ({
         <div>
           <a
             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-            href="https://www.inaf.ulaval.ca/en/"
+            href={link}
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -67,9 +56,9 @@ const ExperienceCard = ({
         </div>
         <p className="text-slate-400 mt-2 text-sm leading-normal">{jobDesc}</p>
         <ul className="flex flex-wrap mt-2">
-          {tech.map((singleTech) => {
+          {tech.map((singleTech, index) => {
             return (
-              <li className="mr-1.5 mt-2">
+              <li key={index} className="mr-1.5 mt-2">
                 <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                   {singleTech}
                 </div>
