@@ -10,8 +10,6 @@ import Projects from "@/components/Projects";
 import ProjectsArchive from "@/components/ProjectsArchive";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Moubarack's Portfolio",
   description: "Moubarack Bagoudou's portfolio",
@@ -34,7 +32,7 @@ export default function RootLayout({
           <Experience />
           <Resume />
           <Projects />
-          <ProjectsArchive />
+          {/* <ProjectsArchive /> */}
           <Footer />
         </div>
       </body>

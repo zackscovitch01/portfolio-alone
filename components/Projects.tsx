@@ -1,5 +1,6 @@
 import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 import SortingVisualizer from "../public/sorting-visualizer.png";
+import PathfindingVisualizer from "../public/pathfinding-visualizer.png";
 import ComfyStore from "../public/comfy-store.png";
 
 const projects = [
@@ -26,6 +27,13 @@ const projects = [
       "ReactRouter",
       "API",
     ],
+  },
+  {
+    title: "Pathfinding Visualizer",
+    desc: "Interactive web application to demonstrate various pathfinding algorithms in action. It helps visualize how different algorithms navigate through a grid to find the shortest path between two points.",
+    image: PathfindingVisualizer,
+    link: "https://pathfinder-visualizer-bay.vercel.app/",
+    techs: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
 ];
 

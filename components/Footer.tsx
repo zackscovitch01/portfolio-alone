@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-10 ml-6">
+    <footer className="max-w-md pb-10 text-sm text-slate-500 sm:pb-10 ml-6">
       <p>
         Coded in{" "}
         <a
