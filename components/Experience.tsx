@@ -46,7 +46,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div
+    <section
       className="lg:mt-16 mt-12 ml-6 lg:max-w-[32rem] scroll-mt-16 lg:scroll-mt-24"
       id="experience"
     >
@@ -69,7 +69,7 @@ const Experience = () => {
           />
         );
       })}
-    </div>
+    </section>
   );
 };
 export default Experience;

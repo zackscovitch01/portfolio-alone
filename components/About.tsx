@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div
+    <section
       className="lg:mt-16 ml-6 mt-14 lg:max-w-[32rem] scroll-mt-16 lg:scroll-mt-24"
       id="about"
     >
@@ -61,7 +61,7 @@ const About = () => {
         experiences. <br />
         <br />
       </p>
-    </div>
+    </section>
   );
 };
 export default About;

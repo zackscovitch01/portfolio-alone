@@ -39,7 +39,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div
+    <section
       className="group/list lg:mt-16 ml-6 lg:max-w-[32rem] mt-12 scroll-mt-16 lg:scroll-mt-24"
       id="projects"
     >
@@ -60,7 +60,7 @@ const Projects = () => {
           />
         );
       })}
-    </div>
+    </section>
   );
 };
 export default Projects;

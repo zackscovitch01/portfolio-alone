@@ -8,6 +8,7 @@ const Navbar = () => {
     });
     e.currentTarget.classList.add("active");
   };
+
   return (
     <nav className="nav hidden lg:flex lg:flex-col gap-4 mt-16">
       <a
