@@ -1,6 +1,31 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [currentSection, setCurrentSection] = useState("about");
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll(".nav a");
+    const sectionsEls = document.querySelectorAll(".section");
+    window.addEventListener("scroll", () => {
+      (Array.from(sectionsEls) as HTMLElement[]).forEach(
+        (sectionEl: HTMLElement) => {
+          if (window.scrollY >= sectionEl.offsetTop - 120) {
+            setCurrentSection(sectionEl.id);
+            console.log(currentSection);
+          }
+        }
+      );
+    });
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+      }
+    });
+  }, [currentSection]);
+
   const handleActive = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const navLinks = document.querySelectorAll(".nav a");
     navLinks.forEach((link) => {
