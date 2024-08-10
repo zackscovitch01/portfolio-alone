@@ -2,8 +2,44 @@ import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 import SortingVisualizer from "../public/sorting-visualizer.png";
 import PathfindingVisualizer from "../public/pathfinding-visualizer.png";
 import ComfyStore from "../public/comfy-store.png";
+import pdfGPT from "../public/pdf-GPT.png";
+import AriannaAi from "../public/arianna-ai.png";
 
 const projects = [
+  {
+    title: "Arianna AI",
+    desc: "An AI powered sales assistant to capture and nurture leads, book meetings, and answer questions. It can also help you with your sales strategy perfect for B2B sales and agencies.",
+    image: AriannaAi,
+    link: "https://arianna-ai.vercel.app/",
+    techs: [
+      "OpenAi",
+      "Stripe",
+      "TypeScript",
+      "Clerk",
+      "Next.js",
+      "Tailwind CSS",
+      "Cloudways",
+      "Neon",
+    ],
+  },
+  {
+    title: "pdf-GPT",
+    desc: "A web application to interact with any pdf document using Ai. It can summurize or give you insights about the document.",
+    image: pdfGPT,
+    link: "https://pdf-gpt-nine.vercel.app/",
+    techs: [
+      "OpenAi",
+      "Langchain",
+      "Firebase",
+      "Stripe",
+      "TypeScript",
+      "Clerk",
+      "Next.js",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "DaisyUI",
+    ],
+  },
   {
     title: "Sorting Visualizer",
     desc: "Web app to visualize sorting algorithms like Bubble Sort, Merge Sort, Quick Sort, etc.",
